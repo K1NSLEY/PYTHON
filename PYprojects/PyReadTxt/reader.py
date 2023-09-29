@@ -1,8 +1,8 @@
 # Nome do arquivo de texto a ser verificado
-nome_arquivo = "C:\\Users\\kinsb\\OneDrive\\Documentos\\VScode IDE\\PYTHON\\PyReadTxt\\read.txt"
+nome_arquivo = "C:\\Users\\kinsb\\OneDrive\\Documentos\\VScode IDE\\PYTHON\\PYprojects\\PyReadTxt\\read.txt"
 
 # Palavra que você deseja verificar no arquivo
-palavra_a_verificar = "i"
+palavra_a_verificar = "LUIGHI"
 
 try:
     # Abre o arquivo em modo de leitura
