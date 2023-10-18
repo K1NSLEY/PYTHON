@@ -8,6 +8,6 @@ print("Digite algo (pressione Esc para sair):")
 while True:
     tecla = obter_tecla()
 
-    if tecla == b'a':
-        print("\nEncerrando o programa.")
-        break
+    if tecla ==  b'\x1b':
+        print("\nEscPress")
+    break
