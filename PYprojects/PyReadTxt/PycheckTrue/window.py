@@ -3,10 +3,15 @@ import tkinter as tk
 # Função para fechar a janela
 def fechar_janela():
     janela.destroy()
+def toggle_fullscreen(event=None):
+    state = not root.attributes('-fullscreen')
+    root.attributes('-fullscreen', state)
 
 # Criar a janela
 janela = tk.Tk()
 
+.bind("<F11>", toggle_fullscreen)
+root.bind("<Escape>", close)
 # Adicionar um rótulo à janela
 rotulo = tk.Label(janela, text="Minha Janela")
 rotulo.pack(padx=10, pady=10)
