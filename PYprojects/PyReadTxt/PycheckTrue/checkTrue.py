@@ -23,23 +23,25 @@ def Idade():
         print("Você tem ", idade,"anos. Sem parabéns. Criança.")
     time.sleep(3)
 def Calc():
-    valor1=input("Digite 'ON'ou 'OFF': ")
-    valor2=input("Digite o Segundo Valor: ")
+    os.system('cls')
+    print("Bem vindo á calculadora eletrônica, por favor selecione seus valores e em seguida selecione sua porta lógica, e confira o resultado\n")
+    valor1=input("Digite o primeiro valor 'ON'ou 'OFF': ")
+    valor2=input("Digite o Segundo Valor 'ON'ou 'OFF': ")
     selector=input("Como deseja Calcular?\n1° AND\n2° OR\n3° NOT\n4° XOR\n5° NAND\n6° NOR: ")
     if valor1=='on'or valor1=='ON'or valor1=='On'or valor1=='oN'or valor1=='1'or valor1=='True':
         valor1=True
     if valor2=='off'or valor2=='OFF'or valor2=='Off'or valor2=='oFf'or valor2=='OfF'or valor2=='ofF'or valor2=='oN'or valor2=='0'or valor2=='False':
         valor2=False
-    if selector== 'x'or selector=='AND'or selector=='ANd'or selector=='AnD'or selector=='aND'or selector=='And'or selector=='anD'or selector=='and':
+    if selector== 'x'or selector=='AND'or selector=='ANd'or selector=='AnD'or selector=='aND'or selector=='And'or selector=='anD'or selector=='and'or selector=='1':
         print("Você selecionou And")
-        time.sleep(1)
-        print("A soma das portas lógiacas: ",valor1," x ",valor2,"resulta em:")
+        print("O resultado das portas lógiacas: ",valor1," x ",valor2,"resulta em:")
         resultado=valor2 and valor1
         if resultado ==True:
             print('Verdadeiro')
+            time.sleep(5)
         if resultado ==False:
             print('Falso')
-time.sleep(5)
+            time.sleep(5)
 
 while True:
     os.system('cls')
@@ -64,7 +66,7 @@ while True:
         print("1° - Digite 'N' para ir ao montador de nomes: ")
         print("2° - Digite 'P' para ir ao Pesquisador de Cursos")
         print("3° - Digite 'I' para descobrir sua idade")
-        print("4° - Digite 'C' para descobrir sua idade")
+        print("4° - Digite 'C' para abrir a calculadora de portas lógicas")
         menu=input("Para onde deseja ir?")
     if menu == 'n'or menu=='N'or menu=='1':
         Nome()

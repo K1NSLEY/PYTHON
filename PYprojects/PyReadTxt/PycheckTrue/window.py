@@ -9,9 +9,6 @@ def toggle_fullscreen(event=None):
 
 # Criar a janela
 janela = tk.Tk()
-
-.bind("<F11>", toggle_fullscreen)
-root.bind("<Escape>", close)
 # Adicionar um rótulo à janela
 rotulo = tk.Label(janela, text="Minha Janela")
 rotulo.pack(padx=10, pady=10)
