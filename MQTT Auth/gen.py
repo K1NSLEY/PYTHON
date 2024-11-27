@@ -3,9 +3,9 @@ import paho.mqtt.client as mqtt
 # Configurações do broker MQTT
 BROKER = "broker.hivemq.com"  # Endereço do broker
 PORT = 1883  # Porta padrão
-TOPIC_SUBSCRIBE = "PontoNet/AutoFiller/Auth"  # Tópico para escutar
-TOPIC_PUBLISH = "PontoNet/AutoFiller/Post"  # Tópico para publicar
-CLIENT_ID = "d21439d3-919e-43bd-a938-bff79da815fa"  # ID único do cliente
+TOPIC_SUBSCRIBE = ""  # Tópico para escutar
+TOPIC_PUBLISH = ""  # Tópico para publicar
+CLIENT_ID = ""  # ID único do cliente
 
 # Callback para quando o cliente se conecta ao broker
 def on_connect(client, userdata, flags, rc):
